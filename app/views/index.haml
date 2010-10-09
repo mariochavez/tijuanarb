@@ -1,6 +1,58 @@
 !!!5
 %html
   %head
-    %title tijuana.rb
+    %meta{:content => "Sitio web de la comunidad tijuana.rb", :name => "description"}
+      %meta{:content => "Mario Alberto Chavez @ Decisiones Inteligentes", :name => "author"}
+        %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}
+          %title tijuana.rb
+          %style{:media => "screen", :type => "text/css"}
+            body {
+            background: #dbdbdb url('images/background.png') no-repeat fixed center;
+            }
+            \#content {
+            margin: auto;
+            top: 150px;
+            width: 800px;
+            position: relative;
+            }
+            \#logo {
+            position: absolute;
+            top: 80px;
+            left: 40px;
+            }
+            \#separator {
+            position: absolute;
+            top: 90px;
+            left: 240px;
+            }
+            \#title {
+            position: absolute;
+            top: 30px;
+            left: 290px;
+            }
+            \#twitter {
+            position: relative;
+            top: -80px;
+            left: 240px;
+            }
+            \#google {
+            position: relative;
+            top: -129px;
+            left: 303px;
+            }
   %body
-    %h1 Hello world
+    #content
+      #logo
+        %img{:src => "images/tijuanarb-logo.png"}/
+      #separator
+        %img{:src => "images/separator.png"}/
+      #title
+        %img{:src => "images/tijuanarb.png"}/
+        %img{:src => "images/message.png"}/
+        #twitter
+          %a{:href => "http://twitter.com/tijuanarb"}
+            %img{:src => "images/twitter.png"}/
+        #google
+          %a{:href => "http://groups.google.com/group/tijuanarb"}
+            %img{:src => "images/google.png"}/
+
