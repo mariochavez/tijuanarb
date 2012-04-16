@@ -13,7 +13,7 @@ rescue LoadError
 end
 
 Bundler.require(:default, PADRINO_ENV.to_sym)
-puts "=> Located #{Padrino.bundle} Gemfile for #{Padrino.env}"
+#puts "=> Located #{Padrino.bundle} Gemfile for #{Padrino.env}"
 
 ##
 # Add here your before load hooks

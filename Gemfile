@@ -2,7 +2,7 @@ source :rubygems
 
 # Project requirements
 gem 'rake'
-gem 'rack-flash'
+gem 'sinatra-flash'
 gem 'thin' # or mongrel
 
 # Component requirements
@@ -16,4 +16,4 @@ gem 'rack-test', :require => "rack/test", :group => "test"
 
 
 # Padrino
-gem 'padrino', "0.9.16"
+gem 'padrino', "0.10.6"
